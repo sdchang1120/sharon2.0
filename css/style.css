@@ -489,8 +489,19 @@ p {
 }
 
 /* ----- typed effect ----- */
-.typed-cursor{opacity: 0;}
-
+.typed-cursor{
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+@-webkit-keyframes blink {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
 
 /* ------------------------------ 7) Sections ------------------------------ */
 
