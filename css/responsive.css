@@ -1,15 +1,15 @@
 @media screen and (max-width: 480px){
-	/*----- layout ----*/
+	/* ----- layout ---- */
 	.grey-bg, .white-bg{
 		padding: 50px 20px;
 	}
-	/*---- hero -----*/
+	/* ----- hero ----- */
 	.hero-content{
-		min-width: 280px;
-		padding: 25px;
+		min-width: 300px;
+		padding: 20px;
 	}
 	.menu-wrap{width: 220px;}
-	/*---- about -----*/
+	/* ---- about ----- */
 	.wrap-about{
 		padding: 0 0 20px 0;
 		min-height: 400px !important;
@@ -19,9 +19,14 @@
     right: 0;
     width: 100%;
     top: 0;
-    padding: 30px 0;
+    padding: 20px 0;
     transform: none;
 	}
+	/* ----- work ----- */
+	figure {
+		width: 100%;
+	}
+	/* ----- connect ----- */
 	#connect {
 		padding: 150px 0 150px 0;
 	}
@@ -38,10 +43,7 @@
   /*------- about -------*/
   .wrap-about{
   	min-height: 520px;
-  	padding-bottom: 10%;
-  	padding-left: 30px;
-    padding-right: 30px;
-		padding-top: 10%;
+  	padding: 10% 30px;
   }
 	/*------ footer -----*/
   footer p{ text-align: center; }

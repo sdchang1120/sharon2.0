@@ -25,6 +25,10 @@ TABLE OF CONTENTS:
   font-family: 'Brandon Med';
   src: url('../fonts/Brandon_med.otf');
 }
+@font-face {
+  font-family: 'Brandon Light';
+  src: url('../fonts/Brandon_light.otf');
+}
 *,
 *:after,
 *:before {
@@ -80,18 +84,23 @@ button {
   border-radius: 4px;
   background: #E04040;
   border: none;
-  border-bottom: 3px solid darkred;
+  border-bottom: 2px solid darkred;
   padding: 5px 10px;
   color: white;
   font-size: 13px;
 }
 button:hover {
   border: none;
-  -webkit-transform: translateY(3px);
-  -moz-transform: translateY(3px);
-  -o-transform: translateY(3px);
-  -ms-transform: translateY(3px);
-  transform: translateY(3px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+.center-div {
+  display: flex; /* centers caption div */
+	align-items: center; /* centers caption div */
+  height: 100%;
 }
 
 /* ------------------------------ 2) Preloader ------------------------------ */
@@ -641,6 +650,8 @@ figure:hover figcaption {
 	top: 0;
 }
 figcaption {
+  display: flex; /* centers caption div */
+	align-items: center; /* centers caption div */
   text-align: center;
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 	filter: alpha(opacity=0);
@@ -681,12 +692,11 @@ figure:hover img {
 	transform: scale(1.1);
 }
 figcaption h3 {
+  font-family: 'Brandon Light';
   text-transform: uppercase;
-	padding: 5px 10px;
-	margin-bottom: 0;
+  margin-top: 10px;
 	position: relative;
-	margin-top: 40px;
-	font-size: 25px;
+	font-size: 22px;
 }
 figcaption p {
 	padding: 10px 20px;
@@ -709,17 +719,16 @@ figcaption a {
 figcaption a:hover {
   color: white;
 }
-#work-desc {
-  /*font-family: 'Georgia';
-  font-style: italic;*/
-}
 #tech-desc {
   font-size: 12px;
   color: #cecece;
 }
 
 /* ----- c. connect ----- */
-#connect {padding: 300px 0 300px 0;}
+#connect {
+  /*padding: 300px 0 300px 0;*/
+  height: 100%;
+}
 /*#connect .fa {
   font-size: 50px;
   margin: 10px;
