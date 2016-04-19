@@ -25,6 +25,16 @@
 	/* ----- work ----- */
 	figure {
 		width: 100%;
+		height: 275px;
+	}
+	figcaption h3 {
+		font-size: 18px;
+	}
+	figcaption p {
+		font-size: 12px;
+	}
+	#tech-desc {
+		font-size: 11px;
 	}
 	/* ----- connect ----- */
 	#connect {
