@@ -611,16 +611,58 @@ p {
   width: 60px;
   margin: 10px;
   box-sizing: border-box;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.skills img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+.skills img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
+}
+/* ----- skills icon ----- */
+.skills-icon {
+  display: inline-block;
+  position: relative;
+}
+.skills-overlay {
+  position: absolute;
+  top: 0;
+  display: flex; /* centers caption div */
+	align-items: center; /* centers caption div */
+  height: 100%;
+	width: 100%;
+  cursor: crosshair;
+}
+.skills-overlay span {
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	transition: all .2s ease;
+	-webkit-transition-delay: .1s;
+	-moz-transition-delay: .1s;
+	-o-transition-delay: .1s;
+	-ms-transition-delay: .1s;
+	transition-delay: .1s;
+}
+.skills-icon:hover span {
+  opacity: 1;
+  font-family: 'Brandon Med';
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.skills-icon:hover img {
+  -webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+  filter: blur(2px);
+  opacity: .3;
 }
 
 /* ----- b. work ----- */
