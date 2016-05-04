@@ -776,19 +776,23 @@ figcaption a:hover {
   /*padding: 300px 0 300px 0;*/
   height: 100%;
 }
+.connect-div {
+  width: 100%;
+  text-align: center;
+}
 /*#connect .fa {
   font-size: 50px;
   margin: 10px;
 }*/
-#connect img {
+#connect a img {
   width: 50px;
   margin: 10px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-#connect img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+#connect a img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -797,7 +801,37 @@ figcaption a:hover {
 .contact-icons {
   text-align: center;
 }
-
+.connect-icon {
+  display: inline-block;
+  position: relative;
+}
+.connect-overlay {
+  display: flex; /* centers caption div */
+	align-items: center; /* centers caption div */
+  position: absolute;
+  bottom: -50px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.connect-overlay span {
+  width: 100%;
+  opacity: 0;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Brandon Med';
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.connect-icon:hover span {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
 /* ----- d. footer ----- */
 footer {
   width: 100%;
