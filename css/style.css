@@ -435,7 +435,7 @@ h5 {
 }
 p {
   letter-spacing: 0.5px;
-  font-size: 13px;
+  font-size: 13pt;
   line-height: 34px;
   font-weight: 300;
 }
@@ -586,7 +586,7 @@ p {
   height: 35px;
 }
 .wrap-about .head-about {
-  font-size: 13px;
+  font-size: 13pt;
   line-height: 34px;
   letter-spacing: 0.5px;
   font-weight: 300;
@@ -739,7 +739,7 @@ figcaption h3 {
   text-transform: uppercase;
   margin-top: 10px;
 	position: relative;
-	font-size: 22px;
+	font-size: 20pt;
 }
 figcaption p {
 	padding: 10px 20px;
@@ -747,7 +747,7 @@ figcaption p {
 	margin-top: 20px;
   line-height: 20px;
 	position: relative;
-	font-size: 14px;
+	font-size: 12pt;
 }
 figure:hover h3,figure:hover p {
 	left: 0;
@@ -767,7 +767,7 @@ figcaption a:hover {
   /*height: 100%;*/
 }
 #tech-desc {
-  font-size: 12px;
+  font-size: 11pt;
   color: #cecece;
 }
 
