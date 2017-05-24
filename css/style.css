@@ -15,7 +15,7 @@ TABLE OF CONTENTS:
 6) Hero
 7) Sections
  7.a) about
- 7.b) work
+ 7.b) projects
  7.c) connect
  7.d) footer
 */
@@ -665,8 +665,8 @@ p {
   opacity: .3;
 }
 
-/* ----- b. work ----- */
-/*#work .projects {
+/* ----- b. projects ----- */
+/*#projects .projects {
   max-width: 500px;
   min-width: 300px;
   margin: 30px auto;
